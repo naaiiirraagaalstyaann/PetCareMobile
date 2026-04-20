@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetCareMobile.MainPage"
+             BackgroundColor="#F2B90D">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15" HorizontalOptions="Fill">
+
+            <Label Text="Care" FontSize="40" FontAttributes="Bold" FontFamily="Georgia" 
+                   TextColor="#654336" HorizontalOptions="Center" Margin="0,20" />
+
+            <Entry x:Name="txtUserName" Placeholder="Enter your name" 
+                   PlaceholderColor="#CCCCCC" TextColor="White" BackgroundColor="#654336" />
+
+            <Entry x:Name="txtPetName" Placeholder="Enter pet name" 
+                   PlaceholderColor="#CCCCCC" TextColor="White" BackgroundColor="#654336" />
+
+            <Border Stroke="#654336" StrokeThickness="1" Padding="15" BackgroundColor="#FFE696">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15"/>
+                </Border.StrokeShape>
+                <VerticalStackLayout x:Name="taskListStack" Spacing="5" />
+            </Border>
+
+            <Button Text="Enter" Clicked="OnLogClicked" 
+                    BackgroundColor="#654336" TextColor="White" CornerRadius="25" />
+
+            <Border BackgroundColor="#654336" Padding="15,5" Margin="0,10,0,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15"/>
+                </Border.StrokeShape>
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <CheckBox x:Name="chkTodayOnly" Color="White" CheckedChanged="OnFilterChanged" />
+                    <Label Text="Show today only" TextColor="White" VerticalOptions="Center" FontAttributes="Bold"/>
+                </HorizontalStackLayout>
+            </Border>
+
+            <CollectionView x:Name="historyList" Margin="0,10">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Stroke="#654336" StrokeThickness="2" Margin="0,10" Padding="12" BackgroundColor="#D9A86C">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                                    <Border BackgroundColor="#FFE696" Padding="4" StrokeThickness="1" Stroke="#654336">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="5"/>
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout>
+                                            <Label Text="Time" HorizontalOptions="Center" FontSize="10" FontAttributes="Bold" TextColor="#654336"/>
+                                            <Label Text="{Binding TimeStamp, StringFormat='{0:HH:mm}'}" HorizontalOptions="Center" TextColor="#654336"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                    <Border BackgroundColor="#FFE696" Padding="4" StrokeThickness="1" Stroke="#654336">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="5"/>
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout>
+                                            <Label Text="Pet" HorizontalOptions="Center" FontSize="10" FontAttributes="Bold" TextColor="#654336"/>
+                                            <Label Text="{Binding PetName}" HorizontalOptions="Center" TextColor="#654336"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </VerticalStackLayout>
+                                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                                    <Border BackgroundColor="#FFE696" Padding="4" StrokeThickness="1" Stroke="#654336">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="5"/>
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout>
+                                            <Label Text="Activity" HorizontalOptions="Center" FontSize="10" FontAttributes="Bold" TextColor="#654336"/>
+                                            <Label Text="{Binding Task}" HorizontalOptions="Center" TextColor="#654336"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                    <Border BackgroundColor="#FFE696" Padding="4" StrokeThickness="1" Stroke="#654336">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="5"/>
+                                        </Border.StrokeShape>
+                                        <VerticalStackLayout>
+                                            <Label Text="Done By" HorizontalOptions="Center" FontSize="10" FontAttributes="Bold" TextColor="#654336"/>
+                                            <Label Text="{Binding LoggedBy}" HorizontalOptions="Center" TextColor="#654336"/>
+                                        </VerticalStackLayout>
+                                    </Border>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
