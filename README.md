@@ -1,4 +1,4 @@
-# PetCareMobile 🐾
+# PawCare 🐾
 
 ## The Problem
 In my house, we often forget if the dog has been fed or if someone already took them 
@@ -10,8 +10,8 @@ anyone in the family check off tasks so the rest of us can see exactly what has 
 done for our pet today.
 
 ## Screenshots
-<img width="490" height="975" alt="image" src="https://github.com/user-attachments/assets/03fb5c63-88be-4cb4-a13e-7bd0fe1f2066" />
-<img width="489" height="1096" alt="image" src="https://github.com/user-attachments/assets/d26b6ebc-8cfc-4fea-ad69-6ee0bd71f36a" />
+<img width="380" height="409" alt="image" src="https://github.com/user-attachments/assets/f44d2be0-3200-4fd3-b179-67cb1f445d0a" />
+<img width="205" height="364" alt="image" src="https://github.com/user-attachments/assets/c468308d-cce0-4788-9b26-6c7bdfdd707d" />
 
 
 
