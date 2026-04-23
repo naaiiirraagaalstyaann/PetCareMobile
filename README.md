@@ -10,8 +10,11 @@ anyone in the family check off tasks so the rest of us can see exactly what has 
 done for our pet today.
 
 ## Screenshots
-<img width="380" height="409" alt="image" src="https://github.com/user-attachments/assets/f44d2be0-3200-4fd3-b179-67cb1f445d0a" />
-<img width="205" height="364" alt="image" src="https://github.com/user-attachments/assets/c468308d-cce0-4788-9b26-6c7bdfdd707d" />
+<img width="490" height="1098" alt="Screenshot 2026-04-23 115915" src="https://github.com/user-attachments/assets/b13aec97-9faa-467f-9b7e-8cf8d13dab83" />
+<img width="477" height="1095" alt="Screenshot 2026-04-23 120020" src="https://github.com/user-attachments/assets/dc3e7245-0a48-4285-8715-de4a84ff3ab4" />
+<img width="487" height="1099" alt="Screenshot 2026-04-23 115940" src="https://github.com/user-attachments/assets/5fef5895-7cde-4001-bf94-ddf77b2ba1b0" />
+
+
 
 
 
