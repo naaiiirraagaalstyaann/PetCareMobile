@@ -36,7 +36,9 @@ If you are cloning this repository to a new machine, you may encounter `NETSDK` 
 
 ### Fixing Environment Errors
 To resolve missing workload issues, open your terminal in the project directory and run:
-`dotnet workload restore`
+```bash 
+dotnet workload restore
+```
 Note: Ensure you are using Visual Studio 18.0 (2026) or higher to support the .NET 10.0 framework used in this project.
 
 ## How to Run
