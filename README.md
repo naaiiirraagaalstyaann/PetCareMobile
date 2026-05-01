@@ -30,6 +30,15 @@ done for our pet today.
 - JSON for local data persistence
 - Git / GitHub for version control
 
+
+## 🛠️ Installation & Build Fixes
+If you are cloning this repository to a new machine, you may encounter `NETSDK` errors indicating that platform identifiers like Android or iOS are not recognized.This happens when the local environment lacks the specific .NET MAUI workloads required for cross-platform builds.
+
+### Fixing Environment Errors
+To resolve missing workload issues, open your terminal in the project directory and run:
+`dotnet workload restore`
+Note: Ensure you are using Visual Studio 18.0 (2026) or higher to support the .NET 10.0 framework used in this project.
+
 ## How to Run
 1. Clone the repository
 2. Open `PetCareMobile.sln` in Visual Studio
